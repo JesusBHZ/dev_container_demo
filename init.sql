@@ -1,3 +1,3 @@
-CREATE USER 'root'@'localhost' IDENTIFIED BY 'root';
+CREATE USER IF NOT EXISTS 'root'@'localhost' IDENTIFIED BY 'admin';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
