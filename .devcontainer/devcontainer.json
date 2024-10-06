@@ -4,7 +4,7 @@
   "features": {
     "python": "3.12"
   },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y curl mysql-server && pip install --upgrade pip && pip install -r requirements.txt && curl -fsSL https://ollama.com/install.sh | sh && sudo apt-get install -y docker.io && sudo service mysql start && sleep 5 && sudo mysql < /workspaces/dev_container_demo/init.sql",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y curl mariadb-server && pip install --upgrade pip && pip install -r requirements.txt && curl -fsSL https://ollama.com/install.sh | sh && sudo apt-get install -y docker.io && sudo service mariadb start && sleep 5 && sudo mysql < /workspaces/dev_container_demo/init.sql",
   "customizations": {
     "vscode": {
       "extensions": [
